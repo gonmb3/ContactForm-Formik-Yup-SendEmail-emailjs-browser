@@ -67,7 +67,7 @@ const ContactForm = () => {
             <div className="pb-20 flex flex-col gap-4 mt-2 ">
             
                 <div className="mb-5 mt-3">
-                {errors.nombre && touched.nombre ?  <div classnombre="text-[12px] text-red-600">{errors.nombre} </div> : ""}
+                {errors.nombre && touched.nombre ?  <div className="text-[12px] text-red-600">{errors.nombre} </div> : ""}
                     <input
                         value={values.nombre}
                         onBlur={handleBlur}
@@ -95,7 +95,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className='mb-5'>
-                {errors.telefono && touched.telefono ?  <div classtelefono="text-[12px] text-red-600">{errors.telefono} </div> : ""}
+                {errors.telefono && touched.telefono ?  <div className="text-[12px] text-red-600">{errors.telefono} </div> : ""}
                     <input
                         value={values.telefono}
                         onBlur={handleBlur}
