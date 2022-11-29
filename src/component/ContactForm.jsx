@@ -67,7 +67,7 @@ const ContactForm = () => {
             <div className="pb-20 flex flex-col gap-4 mt-2 ">
             
                 <div className="mb-5 mt-3">
-                <span className="text-red-600">{errors.nombre}</span>
+                {errors.nombre && touched.nombre ?  <div classnombre="text-[12px] text-red-600">{errors.nombre} </div> : ""}
                     <input
                         value={values.nombre}
                         onBlur={handleBlur}
@@ -82,7 +82,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className='mb-5'>
-                <span className="text-red-600">{errors.email}</span>
+                {errors.email && touched.email ?  <div className="text-[12px] text-red-600">{errors.email} </div> : ""}
                     <input
                         value={values.email}
                         onBlur={handleBlur}
@@ -95,7 +95,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className='mb-5'>
-                <span className="text-red-600">{errors.telefono}</span>
+                {errors.telefono && touched.telefono ?  <div classtelefono="text-[12px] text-red-600">{errors.telefono} </div> : ""}
                     <input
                         value={values.telefono}
                         onBlur={handleBlur}
